@@ -1,0 +1,127 @@
+<!-- 
+	<table> 대체
+	---------- CSS
+	display:table
+		=> <table>
+	display:table-row
+		=> <tr>
+	display:table-cell
+		=> <td>	
+	display:table-column
+		=> <th>	
+	display:table-caption
+		=> <caption>
+	
+	=> <pre>  : 문서를 있는 그대로 출력
+				<pre> 
+					내용
+				</pre> ====> X // 공백도 포함한다.
+				
+				<pre>내용</pre> ==> O
+				
+	   <span> : 기능은 없다.
+	   			필요한 부분만 CSS 적용, 필요한 부분만 CSS를 적용한다.
+	   			
+		<form> => 화면에 출력하지 않는다.,
+		------	사용자가 입력한 모든 데이터를 모아서 한번에 전송
+				=> 반드시 동반 <input type=submit>
+				=> method 와 action 두 개 방식
+				
+				(1)method => GET / POST 
+						GET방식 :	URL뒤에 데이터를 첨부해서 전송
+								파일명?데이터~~
+								단점. 데이터가 노출된다. (보안 취약)
+								=> GET default
+								=> 화면 출력
+								=> 단순한 데이터 전송
+									1. 페이지번호 요청
+									2. 검색어
+						POST방식 : 내부적으로 전송 (데이터를 노출하지 않는다.)
+								장점. 보안이 뛰어나다.
+									1.로그인
+									2.회원가입
+								전송할 데이터가 많은 경우 사용
+								= 게시판 글쓰기, 수정하기, 회원가입, 파일업로드, 예약
+						형식)
+							<form method="GET|POST"> => 대소무자 구분은 없다.
+							<form method="psot"> 글자를 잘못쓰면 전부 다 GET방식
+							<form> => method를 사용하지 앟은 경우 : GET방식
+						
+				(2)action 
+					- 데이터를 전송 받을 파일명 지정
+				
+				값을 전송하는 태그 
+				-------------
+				HTML : <a> , <form> => 데이터 전송화면 변경
+					= 데이터 전송, 화면변경 할때 쓰인다.
+				JavaScrpt : location.href="파일명"
+				java : response.sendRedirect("파일명")
+				------------------------------------
+				*** form만이 GET/POST 방식, 나머지는 GET방식 
+				*** 데이터전송할 수 있는 것은 위에가 전부 다
+					자바 : 메소드의 매개변수를 이용해서 전송
+					웹프로그램 : URL주소를 이용해서 전송
+				
+				=> 형식)
+					=> insert.jsp로 no=1을 전송
+					=> insert.jsp?no=1
+								-------
+					=> insert.jsp? no=1 => 오류 발생 
+					=> C:\\java Dev
+					=> 한 개 이상의 데이터 전송
+						insert.jsp?id=aaa&pwd=1234
+										----
+								-------------------- request 안에 첨부해서 제공
+								JSP, SERVLET, SPRING, NODEJS
+								----------------------------
+								request, respone : 웹프로그램에서 제공 
+								-------
+								String id=request.getParameter("id");
+								id를 주게되면 id에다가 aaa값을 넘겨준다.
+								
+								String pwd=request.getParameter("pwd")
+								pwd를 주게되면 1234를 출력한다,
+								
+								=> Web은 데이터형이 없다.
+								무조건 문자열
+								---------- 해당 데이터형으로 변경
+											Wrapper 클래스 제공 
+								 
+								 
+								<select> : 콤보박스 (102page)
+									|
+								---------
+								|		|
+							option		optgroup ==> multiple => 여러개 동시 선택
+							데이터입력
+							
+							=> 선택 => 자바에서 받는 경우
+								String[] => getParameterValues() => select(multiple), checkbox
+								String 	 => getParameter()	=> text, textarea, radio
+ -->		
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

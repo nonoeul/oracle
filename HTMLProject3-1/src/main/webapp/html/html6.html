@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--102page의 select:목록태그(오라클의 check)
+	
+		<select> ====> 선택시 데이터를 전송 => 
+		<option value="aaa">A</option> => aaa
+		<option value="bbb">B</option> => bbb
+		<option value="ccc">C</option> => ccc
+		</select>
+		
+		<select>
+		<option value="title">A</option> => aaa
+		<option value="genre">B</option> => bbb
+		<option value="ccc">C</option> => ccc
+		</select>	
+		
+	-->
+	<!--  select : single  -->
+	
+<select multiple="multiple">
+	<option>영화명</option>
+	<option>장르</option>
+	<option>출연진</option>
+	<option>개봉일</option>
+	<option>극장</option>
+</select>
+
+	<h1>select : group 출력</h1>
+
+	<optgroup label="과정">
+		<option>자바</option>		<!-- 객체지향프로그램/라이브러리 -->
+		<option>오라클</option>	<!-- DML/DQL CURD -->
+		<option>HTML/CSS</option>	<!-- 형식:고정 -->
+		<option>JavaScript</option> <!-- Jquery(AJAX) , VueJS, ReactJS -->
+		<option>JSP/Servlet</option> <!-- 내장객체 (request,response,session -->
+		<option>Spring</option> <!-- XML, Annotaion -->
+		<option>AWS</option> <!-- 호스팅:과금주의 -->
+	</optgroup>
+	
+	<optgroup label="프로젝트">
+		<option>JSP(Ajax)</option>
+		<option>Spring(Vue)</option>
+		<option>Spring-Boot기반 ReactJS</option>
+	</optgroup>
+	
+</select>
+	
+	<!-- 
+		서버연결 ==> 데이터 전송 반드시 name 속성을 이용해야 된다.
+								------ 자바에서 값을 받을 수 있다.
+		1. 형식, 태그명, 속성
+		   ------------- 모양 화인 , 모양을 잡을 수 있다.
+		2. 웹 => 형식에 맞게 구현
+		3. 디자인 설정 => CSS------------------------------------------
+		4. 서버와 연결
+		5. 요청데이터를 받아서 출력
+		--------------------
+		옵션 : 고정 / 한부분만 변경
+			---------------- <jsp:include page="파일명">
+		6. 데이터관리 / 데이터프로그램 
+			---------------- 제어 동시에 관리하는 애 Controller
+		= MVC구조라고 한다. => 1차 (교제에 없다) => DOMAIN 모델 (분산처리)
+												|  MSA
+		-------------------------
+	 -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
